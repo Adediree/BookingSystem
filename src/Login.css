@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* border: 1px solid; */
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  /* padding-bottom: 48px; */
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 330px;
+}
+
+.login-texts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* align-items: center; */
+  gap: 16px;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.field-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
