@@ -17,7 +17,7 @@ import { seatOptions, states } from "./mockSeatsData";
 import { useContext } from "react";
 import { BookingContext } from "./BookingContext";
 import { foodSelectOptions } from "./mockSeatsData";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import { BookingSummaryModal } from "./BookingSummary";
 import { ModalEnum } from "./utilities/enums/modalEnum";
 
@@ -37,7 +37,7 @@ export const Booking = () => {
 
   // const [nextWeekDays, setNextWeekDays] = useState(generateNextWeekDays());
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const getDefaultSeatValue = () => {
     if (!selectedSeatId || !selectedSection) return undefined;
