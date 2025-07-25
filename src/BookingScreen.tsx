@@ -1,4 +1,5 @@
 import Armchair from "./images/Armchair.svg";
+import LogOut from "./images/log-out.svg";
 import {
   BaseButton,
   BaseCheckbox,
@@ -97,9 +98,57 @@ export const Booking = () => {
           width: "210px",
           height: "100vh",
           zIndex: 1000,
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <img className="image" src={Ad} alt="Tesa Ad" />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            padding: "8px",
+            paddingTop: "24px",
+            paddingBottom: "24px",
+            // border: "1px solid",
+            justifyContent: "center",
+            background: "linear-gradient(180deg, #221F2D 0%, #000000 100%)",
+          }}
+        >
+          <div
+            style={{
+              // border: "1px solid",
+              // borderColor: "#d0d5dd",
+              borderRadius: "6px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              paddingLeft: "15px",
+              paddingRight: "4px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              gap: "16px",
+              backgroundColor: "#F4F3FF",
+            }}
+          >
+            <div className="welcome-div">
+              <span className="header-main-text">Adebari Tosan</span>
+              <p style={{ fontSize: "0.7rem", color: "#667085" }}>
+                Nice having you back
+              </p>
+            </div>
+            <button
+              style={{
+                padding: "4px",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+              }}
+            >
+              <img className="" src={LogOut} alt="Tesa Ad" />
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
@@ -112,7 +161,7 @@ export const Booking = () => {
         className="container"
       >
         <div className="header">
-          <div className="header-items">
+          {/* <div className="header-items">
             <div className="welcome-div">
               <span className="header-main-text">
                 Welcome back, <span className="olivia">Olivia</span>
@@ -126,7 +175,7 @@ export const Booking = () => {
                 navigate("/");
               }}
             />
-          </div>
+          </div> */}
 
           <div className="booking-section">
             <div className="seat-sections ">
