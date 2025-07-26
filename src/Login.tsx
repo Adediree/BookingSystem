@@ -25,13 +25,23 @@ export const Login = () => {
             placeholder="Enter your email"
             label="Enter email"
           />
-          <BaseInput
-            type="password"
-            placeholder="Enter your password"
-            label="Enter password"
-          />
-          <div>
-            <p>Forgot password</p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+            <BaseInput
+              type="password"
+              placeholder="Enter your password"
+              label="Enter password"
+            />
+            <div style={{ display: "flex", justifyContent: "flex-end" }}>
+              <p
+                style={{
+                  fontSize: "0.75rem",
+                  fontWeight: "500",
+                  color: "#667085",
+                }}
+              >
+                Forgot password
+              </p>
+            </div>
           </div>
           <BaseButton
             text="Login"
@@ -41,7 +51,9 @@ export const Login = () => {
             }}
           />
         </form>
-        <p style={{fontSize:"0.8rem"}}>Qucoon. All rights reserved. © 2025</p>
+        <p style={{ fontSize: "0.8rem" }}>
+          Qucoon. All rights reserved. © 2025
+        </p>
       </main>
     </div>
   );

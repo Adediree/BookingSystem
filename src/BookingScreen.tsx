@@ -102,7 +102,6 @@ export const Booking = () => {
           flexDirection: "column",
         }}
       >
-        <img className="image" src={Ad} alt="Tesa Ad" />
         <div
           style={{
             display: "flex",
@@ -112,7 +111,7 @@ export const Booking = () => {
             paddingBottom: "24px",
             // border: "1px solid",
             justifyContent: "center",
-            background: "linear-gradient(180deg, #221F2D 0%, #000000 100%)",
+            background: "linear-gradient(180deg, #000000 0%, #221F2D 100%)",
           }}
         >
           <div
@@ -149,6 +148,7 @@ export const Booking = () => {
             </button>
           </div>
         </div>
+        <img className="image" src={Ad} alt="Tesa Ad" />
       </div>
 
       <div
